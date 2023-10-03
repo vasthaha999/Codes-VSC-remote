@@ -3,14 +3,14 @@
 #define DENSITY 62.4
 int main()
 {
-    float weight, volume;
+    double weight, volume;
     int size, letters;
     char name[40];
 
     printf("Hi! What's your first name?\n");
-    scanf("%s", &name);
-    printf("%s, what's your weight in pounds?\n", name);
-    scanf("%f", weight);
+    scanf("%s", name);
+    printf("%s, what's your weight in pounds?\n", name); // There is no "&" before "name"
+    scanf("%lf", &weight);
     size = sizeof name;
     letters = strlen(name);
     volume = weight / DENSITY;
