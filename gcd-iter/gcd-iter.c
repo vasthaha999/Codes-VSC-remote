@@ -1,6 +1,6 @@
 //
 // Created by LENOVO on 2023/10/4.
-//
+// to find the greatest common divisor
 #include <stdio.h>
 
 int GCD(int m, int n);
